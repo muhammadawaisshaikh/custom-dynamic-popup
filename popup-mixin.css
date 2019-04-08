@@ -1,0 +1,82 @@
+.fade-section {
+  position: absolute;
+  width: 100%;
+  z-index: 5;
+  top: 31px;
+  transition: 0.1s;
+  opacity: 0; }
+  @media (max-width: 600px) {
+    .fade-section {
+      left: 0; } }
+  .fade-section.show {
+    opacity: 1; }
+    .fade-section.show html {
+      overflow-y: hidden !important; }
+    @media (max-width: 600px) {
+      .fade-section.show {
+        top: 10%; } }
+  .fade-section.row {
+    margin: 0 0 183px 0;
+    height: auto; }
+  .fade-section .centered {
+    display: block;
+    margin: auto; }
+    @media (max-width: 600px) {
+      .fade-section .centered {
+        margin: unset;
+        padding: 0 15px; } }
+
+.popup-fade-centered {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 8;
+  top: 0;
+  transition: 0.1s;
+  opacity: 0;
+  left: 0; }
+  @media (max-width: 600px) {
+    .popup-fade-centered {
+      left: 0; } }
+  .popup-fade-centered.show {
+    opacity: 1; }
+    .popup-fade-centered.show html {
+      overflow-y: hidden !important; }
+    @media (max-width: 600px) {
+      .popup-fade-centered.show {
+        top: 0; } }
+  .popup-fade-centered.row {
+    height: 100%;
+    margin: 0 0 0 0; }
+  .popup-fade-centered .centered {
+    display: block;
+    margin: auto; }
+    @media (max-width: 600px) {
+      .popup-fade-centered .centered {
+        margin: unset;
+        padding: 0 15px; } }
+  .popup-fade-centered .inner-sec {
+    width: 90%;
+    height: 80vh;
+    border-radius: 7px;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.1);
+    border: 1px solid #e0e0e0;
+    background-color: #ffffff;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); }
+    @media (max-width: 1366px) {
+      .popup-fade-centered .inner-sec {
+        height: 80vh; } }
+    @media (max-width: 600px) {
+      .popup-fade-centered .inner-sec {
+        width: 100%;
+        height: 100%; } }
+    .popup-fade-centered .inner-sec .cross {
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      cursor: pointer; }
+
+/*# sourceMappingURL=popup-mixin.css.map */
